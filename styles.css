@@ -1,0 +1,322 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #4e4e4f;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.hero {
+  position: relative;
+  background: url('images/logo.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.section-title {
+  font-size: 2.5rem; /* font size for better visibility */
+  font-weight: 700;
+  color: #333; /* Black color */
+  text-align: center; /* Center the text */
+  margin-top: 30px; /* Space above the title */
+  margin-bottom: 20px; /* Space below the title */
+  position: relative;
+  display: block;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 0; 
+  height: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(121, 76, 28, 0.7); /* Semi-transparent brown */
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333; 
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff; 
+}
+
+.overview, .why-choose-us {
+  position: relative;
+  padding: 30px 0; 
+}
+
+.overview::before, .why-choose-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); 
+  z-index: -1;
+}
+
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.disclaimer {
+  background-color: #ffc107;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 40px 0;
+  border-radius: 5px;
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+footer {
+  background-color: #4a4a4a; 
+  color: #fff;
+  padding: 5px 0; 
+}
+
+.footerValue a {
+  color: #fff;
+}
+
+.footerValue a:hover {
+  text-decoration: underline;
+}
+
+.social-icons i {
+  margin: 0 10px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.section-title {
+  margin-bottom: 2rem; 
+}
+
+/* Pet delights Page */
+.product-category, .product-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product-category img, .product-item img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.product-category h3, .product-item h4 {
+  margin-top: 15px;
+}
+.header-buttons .btn {
+  margin-left: 10px;
+}
+.category-buttons .btn {
+  margin-right: 10px;
+}
+
+/* Styling for Product Items */
+.product-item {
+  background-color: #e0e0e0; /* Grey box */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-right: 15px; /* Ensuring that  there's some space between columns */
+  flex: 1 0 48%; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-6 {
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 100px; 
+}
+
+.product-item h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.product-item p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.product-item .size-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.product-item .size-price span {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.product-item .size-price .price {
+  background-color: #d0d0ff; /* Blue color for price */
+  color: #333;
+}
+
+.product-item .benefits {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  padding: 15px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  background-color: #33333327; 
+}
+.product-item .benefits h5 {
+  font-weight: 700; 
+}
+
+.product-item .benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item .benefits ul li {
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+  margin-bottom: 5px;
+
+}
+
+.product-item .benefits ul li:before {
+  content: "•";
+  color: #007bff; 
+  margin-right: 5px;
+}
+
+/* Reviews Page */
+.form-group {
+  margin-bottom: 15px;
+}
+#reviewsContainer {
+  margin-top: 30px;
+}
+.review-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  
+}
+.review-card h5 {
+  margin: 0 0 10px 0;
+  font-weight: 700; 
+  
+}
+.review-card p {
+  margin: 5px 0;
+}
+.review-card .btn {
+  margin-right: 5px;
+}
+/* Make specific labels bold */
+.form-group label {
+  font-weight: bold;
+}
+
+/* About Us Page */
+#aboutUs img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+a {
+  color: #f3f3f3; 
+  text-decoration: none; 
+}
+
+

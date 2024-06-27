@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .about-container {
+            background-color: #94938eba;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        #aboutUs img {
+            max-width: 150px;
+            border-radius: 40%;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: center;
+            padding-left: 20px; 
+        }
+
+        ul li {
+            margin-bottom: 10px; 
+        }
+
+        a.github-link {
+            text-decoration: underline;
+            color: #007bff; /* Bright color */
+            font-weight: bold;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px; 
+            width: 80%; 
+            margin: 0 auto 50px auto; 
+            background-color: #fff; 
+            border-radius: 5px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+        }
+
+        .content {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        #reviewsContainer {
+            margin-top: 30px;
+        }
+
+        .review-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            background-color: #a9a0a0; 
+            color: #fff; 
+        }
+
+        .review-card h5 {
+            margin: 0 0 10px 0;
+        }
+
+        .review-card p {
+            margin: 5px 0;
+        }
+
+        .review-card .btn {
+            margin-right: 5px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary-transparent text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="index.html">
+                        <img src="images/thepurrfect_logo.jpg" alt="The Purrfect Crew Logo" style="height: 100px;">
+                    </a>
+                    <h1 class="ml-3" style="font-size: 1.5rem; color: #fff;">The Purrfect Crew</h1>
+                </div>
+                <div class="col-md-8 text-right d-flex justify-content-end">
+                    <a class="btn btn-light mx-2" href="index.html">Welcome</a>
+                    <a class="btn btn-light mx-2" href="petfoods.html">Nutrition Corner</a>
+                    <a class="btn btn-light mx-2" href="reviews.html">Feedback Hub</a>
+                    <a class="btn btn-light mx-2" href="analytics.html">Market Watch</a>
+                    <a class="btn btn-primary mx-2" href="about.html">My Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <section id="aboutUs" class="about-container text-center">
+            <img src="images/anirudhmantha.jpg" alt="Sai Anirudh Mantha">
+            <h3><strong>Sai Anirudh Mantha</strong></h3>
+            <p>Welcome to Pet Delights Information! My name is Sai Anirudh Mantha, and I am the sole developer of this project. I am passionate about providing comprehensive and reliable information on pet foods to help pet owners make informed choices for their beloved animals.</p>
+            <h4 class="section-title">Experience Developing This Website</h4>
+            <p>Developing this website has been an enriching experience. I have utilized various web development technologies to create a user-friendly and informative platform. Here’s an overview of the development process:</p>
+            <h4 class="section-title">Construction of the Website</h4>
+            <ul>
+                <li><strong>Planning:</strong> Identified the key features and content necessary for the website.</li>
+                <li><strong>Design:</strong> Created a layout using HTML and styled it with CSS and Bootstrap for a responsive design.</li>
+                <li><strong>Development:</strong> Implemented functionality using JavaScript to enhance user interaction and experience.</li>
+            </ul>
+            <h4 class="section-title">Technologies Used</h4>
+            <ul>
+                <li>HTML for structuring the content.</li>
+                <li>CSS and Bootstrap for styling and responsive design.</li>
+                <li>JavaScript for dynamic content and interaction.</li>
+            </ul>
+            <h4 class="section-title">GitHub Repository</h4>
+            <p>You can find the complete source code of this project on my <a href="https://github.com/anirudhmantha/Pet_Website.git" target="_blank" class="github-link">GitHub repository</a>.</p>
+        </section>
+    </main>
+
+    <footer class="text-white py-3 mt-5">
+        <div class="container">
+            <div class="social-icons text-center mb-3">
+                <a href="https://www.facebook.com/" target="_blank" class="text-white mr-2"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" class="text-white mr-2"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+            <p class="text-center mb-0">&copy; 2024 The Purrfect Crew. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

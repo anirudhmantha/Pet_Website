@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Delights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-primary-transparent text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="index.html">
+                        <img src="images/thepurrfect_logo.jpg" alt="The Purrfect Crew Logo" style="height: 100px;">
+                    </a>
+                    <h1 class="ml-3" style="font-size: 1.5rem; color: #fff;">The Purrfect Crew</h1>
+                </div>
+                <div class="col-md-8 text-right d-flex justify-content-end header-buttons">
+                    <a class="btn btn-light mx-2" href="index.html">Welcome</a>
+                    <a class="btn btn-primary mx-2" href="petfoods.html">Nutrition Corner</a>
+                    <a class="btn btn-light mx-2" href="reviews.html">Feedback Hub</a>
+                    <a class="btn btn-light mx-2" href="analytics.html">Market Watch</a>
+                    <a class="btn btn-light mx-2" href="about.html">My Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <!-- Main Content -->
+    <main class="container mt-5 flex-grow-1">
+        <div class="text-center">
+            <h2 id="section-title" class="section-title mb-5 mt-5">Pet Delights</h2>
+        </div>
+
+        <!-- Category Section -->
+        <div id="category-section">
+            <div class="row">
+                <div class="col-md-3 product-category" onclick="showSection('dog-foods')">
+                    <img src="images/dog_foods.jpg" alt="Dog Foods">
+                    <h3>Dog Foods</h3>
+                </div>
+                <div class="col-md-3 product-category" onclick="showSection('cat-foods')">
+                    <img src="images/cat_foods.jpg" alt="Cat Foods">
+                    <h3>Cat Foods</h3>
+                </div>
+                <div class="col-md-3 product-category" onclick="showSection('dog-toys')">
+                    <img src="images/dog_toys.jpg" alt="Dog Toys">
+                    <h3>Dog Toys</h3>
+                </div>
+                <div class="col-md-3 product-category" onclick="showSection('cat-toys')">
+                    <img src="images/cat_toys.jpg" alt="Cat Toys">
+                    <h3>Cat Toys</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dog Foods Section -->
+ <div id="dog-foods" class="section" style="display: none;">
+    <button class="btn btn-secondary mb-3" onclick="showSection('category-section')">Back</button>
+    <div class="row">
+        <div class="col-md-6 product-category" onclick="showSection('dry-dog-foods')">
+            <img src="images/dry_dog_food.jpg" alt="Dry Dog Foods">
+            <h4>Dry Dog Foods</h4>
+        </div>
+        <div class="col-md-6 product-category" onclick="showSection('wet-dog-foods')">
+            <img src="images/wet_dog_food.jpg" alt="Wet Dog Foods">
+            <h4>Wet Dog Foods</h4>
+        </div>
+    </div>
+</div>
+
+        
+<!-- Dry Dog Foods Section -->
+<div id="dry-dog-foods" class="section" style="display: none;">
+    <button class="btn btn-secondary mb-3" onclick="showSection('dog-foods')">Back</button>
+    <div class="row">
+        <div class="col-md-6 product-item">
+            <img src="images/medium_digestive_care_dry_dog_food.jpg" alt="Medium Digestive Care Dry Dog Food">
+            <h4>Medium Digestive Care Dry Dog Food</h4>
+            <div class="size-price">
+                <span>Size: 12 x 13.05 oz</span>
+                <span class="price">Price: $45.00</span>
+            </div>
+            <p>Royal Canin Medium Digestive Care Dry Dog Food is formulated for medium dogs 12 months and older weighing 23-55 lb with a sensitive stomach.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Proven results: Up to 91% optimal stool quality</li>
+                    <li>Healthy digestion</li>
+                    <li>Digestible formula</li>
+                    <li>Supports a Balanced Gut Microbiome</li>
+                    <li>Promotes Nutrient Absorption</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 2 -->
+        <div class="col-md-6 product-item">
+            <img src="images/large_weight_care_dry_dog_food.jpg" alt="Large Weight Care Dry Dog Food">
+            <h4>Large Weight Care Dry Dog Food</h4>
+            <div class="size-price">
+                <span>Size: 12 x 13.05 oz</span>
+                <span class="price">Price: $48.00</span>
+            </div>
+            <p>Complete and balanced nutrition for dogs - For adult and mature large breed dogs from 56 to 100 lb (25 to 45 kg) - Over 15 months old - Dogs with a tendency to gain weight.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Weight loss</li>
+                    <li>Sensitivities</li>
+                    <li>Supports Joint Health</li>
+                    <li>Promotes Healthy Digestion</li>
+                    <li>Improves Coat Condition</li>    
+                </ul>
+            </div>
+        </div>
+        <!--  Product 3 -->
+        <div class="col-md-6 product-item">
+            <img src="images/small_breed_adult_dry_dog_food.jpg" alt="Small Breed Adult Dry Dog Food">
+            <h4>Small Breed Adult Dry Dog Food</h4>
+            <div class="size-price">
+                <span>Size: 15 lb</span>
+                <span class="price">Price: $35.00</span>
+            </div>
+            <p>Complete and balanced nutrition for small breed adult dogs, formulated to meet their specific energy needs.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>High energy content</li>
+                    <li>Supports healthy teeth and gums</li>
+                    <li>Rich in antioxidants</li>
+                    <li>Promotes healthy skin and coat</li>
+                    <li>Supports digestive health</li>
+                    <li>Made in the USA with quality ingredients</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 4 -->
+        <div class="col-md-6 product-item">
+            <img src="images/senior_dry_dog_food.jpg" alt="Senior Dry Dog Food">
+            <h4>Senior Dry Dog Food</h4>
+            <div class="size-price">
+                <span>Size: 12 lb</span>
+                <span class="price">Price: $40.00</span>
+            </div>
+            <p>Specially formulated nutrition for senior dogs to support healthy aging and mobility.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Supports joint health</li>
+                    <li>Maintains cognitive function</li>
+                    <li>Rich in vitamins and minerals</li>
+                    <li>Promotes healthy digestion</li>
+                    <li>Supports immune system</li>
+                    <li>Made from gluten free grains</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+       <!-- Wet Dog Foods Section -->
+<div id="wet-dog-foods" class="section" style="display: none;">
+    <button class="btn btn-secondary mb-3" onclick="showSection('dog-foods')">Back</button>
+    <div class="row">
+        <div class="col-md-6 product-item">
+            <img src="images/starter_mother_babydog.jpg" alt="Starter Mother & Babydog">
+            <h4>Starter Mother & Babydog</h4>
+            <div class="size-price">
+                <span>Size: 12 x 13.05 oz</span>
+                <span class="price">Price: $42.00</span>
+            </div>
+            <p>Complete and balanced nutrition for dogs - For mothers from the end of gestation and during lactation - Weaning puppies up to 2 months old.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Microbiome support</li>
+                    <li>Strong immune system</li>
+                    <li>Brain development</li>
+                    <li>Tailored taste & texture for babydogs</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 2 -->
+        <div class="col-md-6 product-item">
+            <img src="images/weight_care_loaf_sauce.jpg" alt="Weight Care Loaf in Sauce">
+            <h4>Weight Care Loaf in Sauce</h4>
+            <div class="size-price">
+                <span>Size: 12 x 13.05 oz</span>
+                <span class="price">Price: $47.00</span>
+            </div>
+            <p>Royal Canin Weight Care Wet Dog Food is formulated for adult dogs of all sizes with a tendency to gain weight.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Weight management</li>
+                    <li>Satisfies hunger</li>
+                    <li>Maintains Muscle Mass</li>
+                    <li>Supports Healthy Metabolism</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 3 -->
+        <div class="col-md-6 product-item">
+            <img src="images/digestive_care_wet_dog_food.jpg" alt="Digestive Care Wet Dog Food">
+            <h4>Digestive Care Wet Dog Food</h4>
+            <div class="size-price">
+                <span>Size: 12 x 13.05 oz</span>
+                <span class="price">Price: $44.00</span>
+            </div>
+            <p>Royal Canin Digestive Care Wet Dog Food is formulated to support digestive health and promote optimal stool quality.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Supports healthy digestion</li>
+                    <li>Improves stool quality</li>
+                    <li>High digestibility</li>
+                    <li>Balanced nutrition</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-md-6 product-item">
+            <img src="images/puppy_wet_dog_food.jpg" alt="Puppy Wet Dog Food">
+            <h4>Puppy Wet Dog Food</h4>
+            <div class="size-price">
+                <span>Size: 12 x 13.05 oz</span>
+                <span class="price">Price: $50.00</span>
+            </div>
+            <p>Complete and balanced nutrition for growing puppies, supporting their developmental needs.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Supports healthy growth</li>
+                    <li>Rich in DHA for brain development</li>
+                    <li>Supports immune system</li>
+                    <li>Tailored texture for puppies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        <!-- Cat Foods Section -->
+        <div id="cat-foods" class="section" style="display: none;">
+            <button class="btn btn-secondary mb-3" onclick="showSection('category-section')">Back</button>
+            <div class="row">
+                <div class="col-md-6 product-category" onclick="showSection('dry-cat-foods')">
+                    <img src="images/dry_cat_food.jpg" alt="Dry Cat Foods">
+                    <h4>Dry Cat Foods</h4>
+                </div>
+                <div class="col-md-6 product-category" onclick="showSection('wet-cat-foods')">
+                    <img src="images/wet_cat_food.jpg" alt="Wet Cat Foods">
+                    <h4>Wet Cat Foods</h4>
+                </div>
+            </div>
+        </div>
+
+       <!-- Dry Cat Foods Section -->
+<div id="dry-cat-foods" class="section" style="display: none;">
+    <button class="btn btn-secondary mb-3" onclick="showSection('cat-foods')">Back</button>
+    <div class="row">
+        <div class="col-md-6 product-item">
+            <img src="images/hairball_care_dry_cat_food.jpg" alt="Hairball Care Dry Cat Food">
+            <h4>Hairball Care Dry Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 3.3 lb (1.5 kg)</span>
+                <span class="price">Price: $25.00</span>
+            </div>
+            <p>Complete and balanced nutrition for cats - Helps manage hairballs with a specific blend of dietary fibers.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Reduces hairball formation</li>
+                    <li>Supports digestive health</li>
+                    <li>Enhances Nutrient Absorption</li>
+                    <li>Maintains Ideal Weight</li>
+                    <li>Boosts Immune System</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 2 -->
+        <div class="col-md-6 product-item">
+            <img src="images/american_shorthair_adult_dry_cat_food.jpg" alt="American Shorthair Adult Dry Cat Food">
+            <h4>American Shorthair Adult Dry Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 5.5 lb</span>
+                <span class="price">Price: $45.99</span>
+            </div>
+            <p>Royal Canin American Shorthair Adult Cat Food is formulated to meet the nutritional needs of this purebred cat 1 year and older.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Special American Shorthair jaw</li>
+                    <li>Weight management</li>
+                    <li>Healthy skin & coat</li>
+                    <li>Digestive health</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 3 -->
+        <div class="col-md-6 product-item">
+            <img src="images/indoor_adult_dry_cat_food.jpg" alt="Indoor Adult Dry Cat Food">
+            <h4>Indoor Adult Dry Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 3.5 lb (1.6 kg)</span>
+                <span class="price">Price: $38.00</span>
+            </div>
+            <p>Complete and balanced nutrition for indoor adult cats, helping to manage hairballs and weight.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Controls hairballs</li>
+                    <li>Maintains healthy weight</li>
+                    <li>Promotes healthy digestion</li>
+                    <li>Reduces stool odor</li>
+                    <li>Supports urinary health</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 4 -->
+        <div class="col-md-6 product-item">
+            <img src="images/senior_dry_cat_food.jpg" alt="Senior Dry Cat Food">
+            <h4>Senior Dry Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 3 lb (1.36 kg)</span>
+                <span class="price">Price: $30.00</span>
+            </div>
+            <p>Specially formulated nutrition for senior cats to support healthy aging and vitality.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Supports joint health</li>
+                    <li>Boosts immune system</li>
+                    <li>Maintains cognitive function</li>
+                    <li>Promotes healthy digestion</li>
+                    <li>Rich in antioxidants</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+       <!-- Wet Cat Foods Section -->
+<div id="wet-cat-foods" class="section" style="display: none;">
+    <button class="btn btn-secondary mb-3" onclick="showSection('cat-foods')">Back</button>
+    <div class="row">
+        <div class="col-md-6 product-item">
+            <img src="images/indoor_adult_morsels_gravy.jpg" alt="Indoor Adult Morsels in Gravy">
+            <h4>Indoor Adult Morsels in Gravy Canned Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 24 x 3 oz</span>
+                <span class="price">Price: $52.57</span>
+            </div>
+            <p>Royal Canin Feline Health Nutrition Indoor Morsels in Gravy is soft cat food formulated for indoor cats 1-7 years old.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Digestive health and an ideal mineral balance</li>
+                    <li>Suitable for spayed & neutered cats</li>
+                    <li>Instinctively preferred</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 2 -->
+        <div class="col-md-6 product-item">
+            <img src="images/kitten_loaf_sauce.jpg" alt="Kitten Loaf in Sauce">
+            <h4>Kitten Loaf in Sauce Canned Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 24 x 3 oz</span>
+                <span class="price">Price: $55.89</span>
+            </div>
+            <p>Complete and balanced nutrition for cats - Specially for the last stage of growth (up to 12 months old).</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Soft texture for baby teeth</li>
+                    <li>Healthy growth</li>
+                    <li>Strong immune system</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 3 -->
+        <div class="col-md-6 product-item">
+            <img src="images/adult_mixed_feeding.jpg" alt="Adult Mixed Feeding">
+            <h4>Adult Mixed Feeding Canned Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 24 x 3 oz</span>
+                <span class="price">Price: $50.00</span>
+            </div>
+            <p>Royal Canin Adult Mixed Feeding is designed to support the unique needs of adult cats through a combination of wet and dry feeding.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Promotes urinary health</li>
+                    <li>Supports healthy digestion</li>
+                    <li>Maintains healthy weight</li>
+                    <li>Provides balanced nutrition</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 4 -->
+        <div class="col-md-6 product-item">
+            <img src="images/senior_wet_cat_food.jpg" alt="Senior Wet Cat Food">
+            <h4>Senior Wet Cat Food</h4>
+            <div class="size-price">
+                <span>Size: 24 x 3 oz</span>
+                <span class="price">Price: $53.00</span>
+            </div>
+            <p>Complete and balanced nutrition for senior cats, supporting their health and vitality in older age.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Supports joint health</li>
+                    <li>Promotes healthy skin and coat</li>
+                    <li>Maintains cognitive function</li>
+                    <li>Supports healthy digestion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+        <!-- Dog Toys Section -->
+<div id="dog-toys" class="section" style="display: none;">
+    <button class="btn btn-secondary mb-3" onclick="showSection('category-section')">Back</button>
+    <div class="row">
+        <div class="col-md-6 product-item">
+            <img src="images/jack_salmon_fishbone.jpg" alt="Jack Salmon Fishbone Durable Dog Chew Toy">
+            <h4>Jack Salmon Fishbone Durable Dog Chew Toy</h4>
+            <div class="size-price">
+                <span class="price">Price: $7.10</span>
+            </div>
+            <p>We all know dogs love to chew, especially on stuff that’s got a hint of real fish flavor. Inspired by the protein of the sea, our Fishbone is flavored with real Jack Salmon, so your dog will go nuts for the smell of it. The nice thing is, you won’t notice.</p>
+            <div class="benefits">
+                <h5>Ingredients</h5>
+                <ul>
+                    <li>Nylon and Real Jack Salmon</li>
+                    <li>Durable and long-lasting</li>
+                    <li>Non-toxic materials</li>
+                    <li>Easy to clean</li>
+                    <li>Helps maintain dental health</li>
+                    <li>Suitable for all dog sizes</li>
+                </ul>
+                <h5>Sizes:</h5>
+                <ul>
+                    <li>Medium: Suitable for dogs up to 25 lbs.</li>
+                    <li>Large: Suitable for dogs 26 to 50 lbs.</li>
+                    <li>XL: Suitable for dogs over 50 lbs.</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 2 -->
+        <div class="col-md-6 product-item">
+            <img src="images/sodapup_magnum_can.jpg" alt="SodaPup Magnum Can">
+            <h4>SodaPup Magnum Can</h4>
+            <div class="size-price">
+                <span class="price">Price: $13.95</span>
+            </div>
+            <p>SodaPup Magnum Can - Anyone up for a fresh pop? Refresh and invigorate Fido with this treat dispenser and chew toy from SodaPup.</p>
+            <div class="benefits">
+                <h5>Why a dog's best friend loves:</h5>
+                <ul>
+                    <li>Designed to withstand "power chewers"</li>
+                    <li>Reduces problem chewing</li>
+                    <li>Made in the U.S.A.</li>
+                    <li>Veterinarian Approved!</li>
+                    <li>Promotes dental health</li>
+                    <li>Eco-friendly materials</li>
+                </ul>
+                <h5>Sizes:</h5>
+                <ul>
+                    <li>Medium: For dogs 0-35 lbs.</li>
+                    <li>Large: For dogs 30-50 lbs.</li>
+                    <li>XL: For dogs 60-90 lbs.</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 3 -->
+        <div class="col-md-6 product-item">
+            <img src="images/durable_dog_ball.jpg" alt="Durable Dog Ball">
+            <h4>Durable Dog Ball</h4>
+            <div class="size-price">
+                <span class="price">Price: $10.99</span>
+            </div>
+            <p>This durable dog ball is perfect for fetch and chew, designed to withstand the toughest play sessions.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Extremely durable</li>
+                    <li>Non-toxic materials</li>
+                    <li>Bounces high</li>
+                    <li>Promotes exercise</li>
+                    <li>Easy to clean</li>
+                </ul>
+                <h5>Sizes:</h5>
+                <ul>
+                    <li>Small: For dogs up to 15 lbs.</li>
+                    <li>Medium: For dogs 15-35 lbs.</li>
+                    <li>Large: For dogs over 35 lbs.</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 4 -->
+        <div class="col-md-6 product-item">
+            <img src="images/plush_dog_toy.jpg" alt="Plush Dog Toy">
+            <h4>Plush Dog Toy</h4>
+            <div class="size-price">
+                <span class="price">Price: $12.50</span>
+            </div>
+            <p>This plush dog toy is perfect for gentle chewers and cuddle time, featuring a squeaker for added fun.</p>
+            <div class="benefits">
+                <h5>Benefits</h5>
+                <ul>
+                    <li>Soft and cuddly</li>
+                    <li>Built-in squeaker</li>
+                    <li>Non-toxic materials</li>
+                    <li>Machine washable</li>
+                    <li>Provides comfort</li>
+                </ul>
+                <h5>Sizes:</h5>
+                <ul>
+                    <li>Small: For dogs up to 10 lbs.</li>
+                    <li>Medium: For dogs 10-25 lbs.</li>
+                    <li>Large: For dogs over 25 lbs.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cat Toys Section -->
+<div id="cat-toys" class="section" style="display: none;">
+    <button class="btn btn-secondary mb-3" onclick="showSection('category-section')">Back</button>
+    <div class="row">
+        <div class="col-md-6 product-item">
+            <img src="images/robo_mouse.jpg" alt="Robo Mouse">
+            <h4>Robo Mouse</h4>
+            <div class="size-price">
+                <span class="price">Price: $38.50 USD</span>
+            </div>
+            <p>Cats love chasing around this robo mouse toy! Using built-in smart sensors, it can recognize various scenes and obstacles to navigate effectively. To fully captivate your cats' attention, it simulates mouse sound and spins its tail. Awaken your cats' natural instincts with the robo mouse.</p>
+            <div class="benefits">
+                <h5>Features</h5>
+                <ul>
+                    <li>Brand: Kikker</li>
+                    <li>Battery: USB charging (cable included)</li>
+                    <li>Replacement tails: 2x included</li>
+                    <li>Smart Sensors: Recognizes various scenes and obstacles to navigate effectively</li>
+                    <li>Mouse Sound Simulation: Emits realistic mouse sounds to attract cats</li>
+                    <li>Spinning Tail: Spins its tail to captivate cats' attention</li>
+                    <li>Interactive Play: Encourages exercise and mental stimulation for cats</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 2 -->
+        <div class="col-md-6 product-item">
+            <img src="images/wild_tumbler.jpg" alt="Wild Tumbler">
+            <h4>Wild Tumbler</h4>
+            <div class="size-price">
+                <span class="price">Price: $24.99 USD</span>
+            </div>
+            <p>Awaken your cat's hunting instincts with the wild tumbler! This remote-controlled interactive cat toy whips around a feather, driving your cat to pounce and attack it. It's equipped with the latest motion technology to move the feather in an entertaining and surprising way. You'll be shocked with how much your cat loves playing with this!</p>
+            <div class="benefits">
+                <h5>Features</h5>
+                <ul>
+                    <li>Replaceable real feather attachments</li>
+                    <li>Weighted bottom for optimal tumbling motion</li>
+                    <li>Remote control lets you pause the action & tease your cat</li>
+                    <li>Unpredictable & enticing feather movements</li>
+                    <li>Battery efficient</li>
+                    <li>Safe & durable</li>
+                    <li>Noiseless</li>
+                </ul>
+            </div>
+        </div>
+       <!--  Product 3 -->
+        <div class="col-md-6 product-item">
+            <img src="images/catnip_toy.jpg" alt="Catnip Toy">
+            <h4>Catnip Toy</h4>
+            <div class="size-price">
+                <span class="price">Price: $15.00 USD</span>
+            </div>
+            <p>This catnip toy is perfect for cats who love to play and relax, infused with high-quality catnip for ultimate enjoyment.</p>
+            <div class="benefits">
+                <h5>Features</h5>
+                <ul>
+                    <li>Infused with premium catnip</li>
+                    <li>Soft and durable material</li>
+                    <li>Encourages playful behavior</li>
+                    <li>Helps relieve stress</li>
+                    <li>Machine washable</li>
+                </ul>
+            </div>
+        </div>
+        <!--  Product 4 -->
+        <div class="col-md-6 product-item">
+            <img src="images/interactive_laser_toy.jpg" alt="Interactive Laser Toy">
+            <h4>Interactive Laser Toy</h4>
+            <div class="size-price">
+                <span class="price">Price: $20.00 USD</span>
+            </div>
+            <p>Engage your cat with this interactive laser toy that provides endless entertainment and stimulates their natural hunting instincts.</p>
+            <div class="benefits">
+                <h5>Features</h5>
+                <ul>
+                    <li>Automatic laser patterns</li>
+                    <li>Safe and non-toxic</li>
+                    <li>Encourages physical activity</li>
+                    <li>Adjustable speed settings</li>
+                    <li>Battery operated</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</main>
+    
+    <!-- Footer -->
+    <footer class="text-white py-3 mt-5">
+        <div class="container">
+            <div class="social-icons text-center mb-3">
+                <a href="https://www.facebook.com/" target="_blank" class="text-white mr-2"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" class="text-white mr-2"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+            <p class="text-center mb-0">&copy; 2024 The Purrfect Crew. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+   
+    <script>
+        function showSection(sectionId) {
+    
+    var sections = document.querySelectorAll('.section, #category-section');
+    sections.forEach(function(section) {
+        section.style.display = 'none';
+    });
+
+    
+    var section = document.getElementById(sectionId);
+    section.style.display = 'block';
+
+    
+    var mainTitle = document.getElementById('section-title');
+    switch (sectionId) {
+        case 'dog-foods':
+            mainTitle.textContent = 'Dog Foods';
+            break;
+        case 'cat-foods':
+            mainTitle.textContent = 'Cat Foods';
+            break;
+        case 'dog-toys':
+            mainTitle.textContent = 'Dog Toys';
+            break;
+        case 'cat-toys':
+            mainTitle.textContent = 'Cat Toys';
+            break;
+        case 'dry-dog-foods':
+            mainTitle.textContent = 'Dry Dog Foods';
+            break;
+        case 'wet-dog-foods':
+            mainTitle.textContent = 'Wet Dog Foods';
+            break;
+        case 'dry-cat-foods':
+            mainTitle.textContent = 'Dry Cat Foods';
+            break;
+        case 'wet-cat-foods':
+            mainTitle.textContent = 'Wet Cat Foods';
+            break;
+        default:
+            mainTitle.textContent = 'Pet Delights';
+            break;
+    }
+}
+
+    </script>
+    </body>
+    </html>
+    

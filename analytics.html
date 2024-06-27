@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-primary-transparent text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="index.html">
+                        <img src="images/thepurrfect_logo.jpg" alt="The Purrfect Crew Logo" style="height: 100px;">
+                    </a>
+                    <h1 class="ml-3" style="font-size: 1.5rem; color: #fff;">The Purrfect Crew</h1>
+                </div>
+                <div class="col-md-8 text-right d-flex justify-content-end">
+                    <a class="btn btn-light mx-2" href="index.html">Welcome</a>
+                    <a class="btn btn-light mx-2" href="petfoods.html">Nutrition Corner</a>
+                    <a class="btn btn-light mx-2" href="reviews.html">Feedback Hub</a>
+                    <a class="btn btn-primary mx-2" href="analytics.html">Market Watch</a>
+                    <a class="btn btn-light mx-2" href="about.html">My Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2 class="section-title text-center">Sales Overview</h2>
+        <div class="content text-center">
+            <p>This section provides an overview of the sales performance of various pet food and toy products, including dry and wet food for dogs and cats, as well as engaging toys for pets. The visualizations below will help you understand the trends and patterns in sales data.</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="salesOverviewChart"></canvas>
+        </div>
+
+        <h2 class="section-title text-center">Monthly Sales Trends</h2>
+        <div class="content text-center">
+            <p>The line chart below displays the monthly sales trends for dog and cat foods. It helps in understanding the seasonal demand and identifying peak sales periods.</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="monthlySalesChart"></canvas>
+        </div>
+
+        <h2 class="section-title text-center">Customer Reviews Summary</h2>
+        <div class="content text-center">
+            <p>The bar chart below summarizes the customer reviews for various pet food products. It shows the number of positive, neutral, and negative reviews received for each product category.</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="reviewsChart"></canvas>
+        </div>
+    </main>
+
+
+    <footer class="text-white py-3 mt-5">
+        <div class="container">
+            <div class="social-icons text-center mb-3">
+                <a href="https://www.facebook.com/" target="_blank" class="text-white mr-2"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" class="text-white mr-2"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+            <p class="text-center mb-0">&copy; 2024 The Purrfect Crew. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+</html>
+
+
